@@ -1,0 +1,49 @@
+{
+  "source_base": "4baa87bb1b5aba5e1a16b3a7bd8cf9c548afd894",
+  "repair_commit": "f8e8700f892df2a04eba2b44d4fabff458c828e7",
+  "package_version": "1.27.25",
+  "browser_versions": {
+    "Chromium": "151.0.7922.34",
+    "Firefox": "153.0",
+    "WebKit": "26.5"
+  },
+  "normal_focus_fixture_tests": {
+    "original_failed": 12,
+    "patched_passed": 12
+  },
+  "forced_colors_fixture_tests": {
+    "chromium_passed": 8,
+    "unsupported_engine_cases_explicitly_skipped": 16
+  },
+  "full_chart_browser_cases": {
+    "per_phase": 36,
+    "types": [
+      "bar",
+      "donut",
+      "meter"
+    ],
+    "themes": [
+      "g10",
+      "g100",
+      "g90",
+      "white"
+    ],
+    "keyboard_controls_passed": 36,
+    "page_errors": 0
+  },
+  "patched_computed_outline_contrast_against_chart_background_minimum": 4.547590717445454,
+  "screenshots": {
+    "actual_fresh_chart_geometry_identical": true,
+    "focus_rect_identical": true,
+    "changed_pixels_in_focus_region": 360,
+    "changed_pixels_outside_focus_region": 0,
+    "source": "WebKit-evidence-before.png and WebKit-evidence-after.png",
+    "method": "PNG chunks/CRCs and scanline filters decoded using stdlib Python; compare every RGB pixel;focus region expanded8px"
+  },
+  "limits": [
+    "No Safari.app,iOS,manual assistive-technology or native Windows High Contrast testing",
+    "CSS fixture tests and actual-chart integration are separate",
+    "Not a general WCAG conformance audit",
+    "No full monorepo build or full Vitest suite claimed"
+  ]
+}
