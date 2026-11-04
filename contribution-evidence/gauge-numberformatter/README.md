@@ -1,0 +1,7 @@
+# Gauge numeric formatter callback
+
+Synthetic local GaugeChart1.27.25 atbase4baa87bb1b5aba5e1a16b3a7bd8cf9c548afd894 withactualCarbonSCSS inheadlessChromium. ThepublicnumberFormatter callbackis(value:number)=>string.
+
+Withvalue66.67,delta-2.25 andformattervalue=>value.toFixed(1),theoriginalpassesastringandthrowsTypeErrorduringchartconstruction. Thebeforecaptureisitsincompletechart,notanartificialerroroverlay. Afterconvertingthecustomcallbackarguments tonumbers,thechart renders66.7%and-2.3%. Existingtwo-decimalroundingandlocaleformattingarepreserved.
+
+ThecasewasalsocheckedinFirefox/WebKitandwithsubsequentdataupdates. Seeupstreamissue1951. Localproofdoesnotimplymaintaineracceptanceorrelease.
